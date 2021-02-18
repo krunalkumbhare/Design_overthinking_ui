@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div id="loading">
+        <div id="dor1">
+            <div id="line1"></div>
+        </div>
+        <div id="dor2">
+            <div id="line2"></div>
+        </div>
+    </div> -->
+    <div id="back">
+        <div id="left">
+            <i class="fa fa-bars"></i>
+            <p class="rotated">social media</p>
+            <p id="l2" class="rotated">01/05</p>
+            <div  id="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+        </div>
+        <div id="right">
+            <div id="rightoverlay">
+                <div id="mainnav">
+                    <h4>Ne.iee</h4>
+                    <div id="link">
+                        <a href="#">works</a>
+                        <a href="#">about</a>
+                        <a id="yellownav" href="#">mail@luova.studio</a>
+                    </div>
+                </div>
+                <div id="head">
+                    <div id="head1" class="heading">Design</div>
+                    <div id="head2" class="heading">Thinking</div>
+                    <div id="head3" class="heading">Overnights</div>
+                </div>
+                <div id="yellowborder">
+                    <div id="line"></div>
+                    <p>   when the morning dawns</p>
+                </div>
+                <div id="nextarticle">
+                    <div id="nextimg"></div>
+                    <div id="nextinfo">
+                        <h3>Next Article</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script>
+        var tl= new TimelineMax();
+        tl
+        .fromTo( '#line1' , 1 , {
+            top : '-60%'
+        } , {
+            top : 0 , ease : Expo.easeInOut
+        }  )
+        .fromTo( '#line2' , 1 , {
+            bottom : '-60%'
+        } , {
+            bottom : 0 , ease : Expo.easeInOut
+        } , '-=1'  )
+        .fromTo( '#dor1' , 1 , {
+            left : '0%'
+        } , {
+            left : '-50%' , ease : Expo.easeInOut
+        }   )
+        .fromTo( '#dor2' , 1 , {
+            left : '50%'
+        } , {
+            left : '100%' , ease : Expo.easeInOut
+        }, '-=1'  )
+        tl
+        .fromTo{ Element , duration , from , to , change in delay }
+    </script>
+</body>
+</html>
